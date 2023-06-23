@@ -18,8 +18,8 @@ services:
     image: 'postgres:15.3'
     container_name: data_warehouse
     environment:
-      - 'POSTGRES_PASSWORD=Suliman@123'
       - 'POSTGRES_USER=suliman'
+      - 'POSTGRES_PASSWORD=Suliman@123'
       - 'POSTGRES_DB=data_warehouse'
     ports:
       - '5432:5432'
