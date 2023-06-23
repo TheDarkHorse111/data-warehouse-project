@@ -16,8 +16,9 @@ In order to run this project you will need:
 git clone https://github.com/TheDarkHorse111/data-warehouse-project.git
 ```
 Firstly we need to create the database the project will use as well as the entity table, we could do that by:
+
     - navigate to src\main\resources\sql
-    - copy and excute **script.sql** file on your local postgres database
+    - copy and excute script.sql file on your local postgres database
 
 To run the project make sure to do the following:
 
