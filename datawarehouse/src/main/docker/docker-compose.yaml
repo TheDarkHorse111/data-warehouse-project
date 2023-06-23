@@ -1,0 +1,26 @@
+services:
+  app:
+    image: 'datawarehouse-0.0.1.jar:latest'
+    build:
+      context: .
+    container_name: datawarehouse
+    depends_on:
+      - postgres
+    environment:
+      - 'SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/data_warehouse'
+      - 'SPRING_DATASOURCE_USERNAME=suliman'
+      - 'SPRING_DATASOURCE_PASSWORD=Suliman@123'
+      - 'SPRING_JPA_HIBERNATE_DDL_AUTO=update'
+    ports:
+      - "8080:8080"
+      
+  postgres:
+    image: 'postgres:15.3'
+    container_name: data_warehouse
+    environment:
+      - 'POSTGRES_PASSWORD=Suliman@123'
+      - 'POSTGRES_USER=suliman'
+      - 'POSTGRES_DB=data_warehouse'
+    ports:
+      - '5432:5432'
+
