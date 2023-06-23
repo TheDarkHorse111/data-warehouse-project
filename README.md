@@ -41,9 +41,8 @@ The project should be running and you should be able to use postman to test the 
 
 
 ### Documentation
-For the full API documentation visit:
-
-    - http://localhost:8080/docs after running the application
+For the full API documentation visit
+http://localhost:8080/docs after running the application
 
 ### Docker
 
